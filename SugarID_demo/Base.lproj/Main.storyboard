@@ -79,9 +79,16 @@
                                 <state key="normal" title="Take a picture of your meal">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="takePicture" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLp-WA-QgZ"/>
+                                    <segue destination="2b1-ZM-eat" kind="showDetail" id="Ip5-10-SLn"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Carb Ratio :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA9-OZ-y4f">
-                                <rect key="frame" x="140.5" y="607" width="133" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Carb Ratio :)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA9-OZ-y4f">
+                                <rect key="frame" x="57" y="607" width="300" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="vZ2-VY-yFu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -110,6 +117,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
+        </scene>
+        <!--takePicture-->
+        <scene sceneID="AYF-wT-Cjs">
+            <objects>
+                <viewController storyboardIdentifier="tp_vc" title="takePicture" id="2b1-ZM-eat" customClass="takePicture" customModule="SugarID_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AeM-Vq-Ufn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eOA-N4-b8O">
+                                <rect key="frame" x="20" y="50" width="374" height="618"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb7-xm-40l">
+                                <rect key="frame" x="20" y="724" width="374" height="44"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton:" destination="2b1-ZM-eat" eventType="touchUpInside" id="xIR-e2-CgT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ScF-Nj-kl5" firstAttribute="bottom" secondItem="bb7-xm-40l" secondAttribute="bottom" constant="40" id="DSy-3T-cdK"/>
+                            <constraint firstItem="eOA-N4-b8O" firstAttribute="leading" secondItem="ScF-Nj-kl5" secondAttribute="leading" constant="20" id="Er7-uJ-hQA"/>
+                            <constraint firstItem="ScF-Nj-kl5" firstAttribute="trailing" secondItem="eOA-N4-b8O" secondAttribute="trailing" constant="20" id="nTJ-4X-I8Q"/>
+                            <constraint firstItem="ScF-Nj-kl5" firstAttribute="bottom" secondItem="eOA-N4-b8O" secondAttribute="bottom" constant="140" id="s6O-9a-z9i"/>
+                            <constraint firstItem="bb7-xm-40l" firstAttribute="leading" secondItem="ScF-Nj-kl5" secondAttribute="leading" constant="20" id="sYF-56-rTc"/>
+                            <constraint firstItem="eOA-N4-b8O" firstAttribute="top" secondItem="ScF-Nj-kl5" secondAttribute="top" constant="50" id="ukK-If-Ppt"/>
+                            <constraint firstItem="ScF-Nj-kl5" firstAttribute="trailing" secondItem="bb7-xm-40l" secondAttribute="trailing" constant="20" id="zgz-uU-wbC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ScF-Nj-kl5"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="eOA-N4-b8O" id="pLP-ge-751"/>
+                        <outlet property="picbutton" destination="bb7-xm-40l" id="0cw-L5-hdl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2pR-Oq-cUx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="129"/>
         </scene>
     </scenes>
     <resources>

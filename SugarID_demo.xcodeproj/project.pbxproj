@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7BCF2DA2545F03F00789022 /* takePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCF2D92545F03F00789022 /* takePicture.swift */; };
 		E7E6D85B254577D000961AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E6D85A254577D000961AD0 /* AppDelegate.swift */; };
 		E7E6D85D254577D000961AD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E6D85C254577D000961AD0 /* SceneDelegate.swift */; };
 		E7E6D85F254577D000961AD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E6D85E254577D000961AD0 /* ViewController.swift */; };
 		E7E6D862254577D000961AD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E6D860254577D000961AD0 /* Main.storyboard */; };
 		E7E6D864254577D400961AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E6D863254577D400961AD0 /* Assets.xcassets */; };
 		E7E6D867254577D400961AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E6D865254577D400961AD0 /* LaunchScreen.storyboard */; };
+		E7ED8C9B2545EA0A003F3D8B /* sampledata.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ED8C9A2545EA0A003F3D8B /* sampledata.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7BCF2D92545F03F00789022 /* takePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takePicture.swift; sourceTree = "<group>"; };
 		E7E6D857254577D000961AD0 /* SugarID_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugarID_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E6D85A254577D000961AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7E6D85C254577D000961AD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		E7E6D863254577D400961AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7E6D866254577D400961AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7E6D868254577D400961AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7ED8C9A2545EA0A003F3D8B /* sampledata.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sampledata.plist; path = "../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/6447f6cdc00e8110069818adbf63a837/Message/MessageTemp/a77b341cc6571100c25ca15b46f3cb2b/File/sampledata.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,10 @@
 				E7E6D85A254577D000961AD0 /* AppDelegate.swift */,
 				E7E6D85C254577D000961AD0 /* SceneDelegate.swift */,
 				E7E6D85E254577D000961AD0 /* ViewController.swift */,
+				E7BCF2D92545F03F00789022 /* takePicture.swift */,
 				E7E6D860254577D000961AD0 /* Main.storyboard */,
 				E7E6D863254577D400961AD0 /* Assets.xcassets */,
+				E7ED8C9A2545EA0A003F3D8B /* sampledata.plist */,
 				E7E6D865254577D400961AD0 /* LaunchScreen.storyboard */,
 				E7E6D868254577D400961AD0 /* Info.plist */,
 			);
@@ -127,6 +133,7 @@
 			files = (
 				E7E6D867254577D400961AD0 /* LaunchScreen.storyboard in Resources */,
 				E7E6D864254577D400961AD0 /* Assets.xcassets in Resources */,
+				E7ED8C9B2545EA0A003F3D8B /* sampledata.plist in Resources */,
 				E7E6D862254577D000961AD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7E6D85F254577D000961AD0 /* ViewController.swift in Sources */,
+				E7BCF2DA2545F03F00789022 /* takePicture.swift in Sources */,
 				E7E6D85B254577D000961AD0 /* AppDelegate.swift in Sources */,
 				E7E6D85D254577D000961AD0 /* SceneDelegate.swift in Sources */,
 			);

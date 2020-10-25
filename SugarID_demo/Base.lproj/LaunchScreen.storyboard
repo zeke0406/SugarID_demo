@@ -15,25 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SugarID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-Bt-VUv">
-                                <rect key="frame" x="136" y="424" width="142.5" height="48"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="YQc-Ql-thD">
-                                <rect key="frame" x="-753" y="234" width="1920" height="150"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SugarID_loading" translatesAutoresizingMaskIntoConstraints="NO" id="DpP-Tg-mTI">
+                                <rect key="frame" x="57" y="132" width="300" height="552"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="9qE-mI-dfj"/>
+                                    <constraint firstAttribute="width" constant="300" id="lgb-Sl-Avf"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="uWJ-Bt-VUv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Db6-2j-jFc"/>
-                            <constraint firstItem="uWJ-Bt-VUv" firstAttribute="top" secondItem="YQc-Ql-thD" secondAttribute="bottom" constant="40" id="NRc-3D-Rdg"/>
-                            <constraint firstItem="uWJ-Bt-VUv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jt3-V7-TWF"/>
-                            <constraint firstItem="YQc-Ql-thD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="k5C-nP-LgS"/>
+                            <constraint firstItem="DpP-Tg-mTI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4mQ-ro-UEN"/>
+                            <constraint firstItem="DpP-Tg-mTI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-40" id="WbP-zM-8eQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -44,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo_transparent" width="1920" height="1080"/>
+        <image name="SugarID_loading" width="581" height="552"/>
     </resources>
 </document>

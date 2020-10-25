@@ -75,7 +75,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9M-Nw-gD5">
-                                <rect key="frame" x="114.5" y="727" width="185" height="30"/>
+                                <rect key="frame" x="114.5" y="777" width="185" height="30"/>
                                 <state key="normal" title="Take a picture of your meal">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -86,24 +86,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoz-my-bhu">
-                                <rect key="frame" x="114" y="772" width="186" height="30"/>
-                                <state key="normal" title="Calculate the sugar in meal">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xA9-OZ-y4f" firstAttribute="top" secondItem="kvc-a3-iod" secondAttribute="bottom" constant="80" id="1xV-WV-bGQ"/>
                             <constraint firstItem="D9M-Nw-gD5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4UT-jp-Fdv"/>
-                            <constraint firstItem="D9M-Nw-gD5" firstAttribute="top" secondItem="kvc-a3-iod" secondAttribute="bottom" constant="200" id="GKV-si-Cez"/>
+                            <constraint firstItem="D9M-Nw-gD5" firstAttribute="top" secondItem="kvc-a3-iod" secondAttribute="bottom" constant="250" id="GKV-si-Cez"/>
                             <constraint firstItem="AfE-B0-OiF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vlx-1h-R8e"/>
                             <constraint firstItem="kvc-a3-iod" firstAttribute="top" secondItem="AfE-B0-OiF" secondAttribute="bottom" constant="30" id="W6u-8K-apa"/>
                             <constraint firstItem="AfE-B0-OiF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aHD-B5-MPr"/>
-                            <constraint firstItem="Yoz-my-bhu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edI-gL-kz4"/>
                             <constraint firstItem="xA9-OZ-y4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q2P-EU-L2h"/>
-                            <constraint firstItem="Yoz-my-bhu" firstAttribute="top" secondItem="D9M-Nw-gD5" secondAttribute="bottom" constant="15" id="ukr-qD-Afk"/>
                             <constraint firstItem="0ee-Kk-QhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xqw-kC-hYU"/>
                             <constraint firstItem="AfE-B0-OiF" firstAttribute="top" secondItem="0ee-Kk-QhW" secondAttribute="bottom" constant="40" id="yCr-Dg-3Wm"/>
                             <constraint firstItem="kvc-a3-iod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHg-bR-52j"/>

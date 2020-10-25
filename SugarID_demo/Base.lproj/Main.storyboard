@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,117 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SugarID_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AfE-B0-OiF">
+                                <rect key="frame" x="87" y="431" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="W82-U4-7lT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kvc-a3-iod">
+                                <rect key="frame" x="49" y="495" width="316" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pa-Kv-Q9E">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <state key="normal" title="Blood Sugar">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bloodSugar:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="um2-F3-rhe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0S3-CO-Xne">
+                                        <rect key="frame" x="111" y="0.0" width="49" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <state key="normal" title="Insulin">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="insulin:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4eh-Jj-hsh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usW-wU-n3c">
+                                        <rect key="frame" x="180" y="0.0" width="38" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <state key="normal" title="Food">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="food:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xkq-uO-H2P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcR-G2-Rtp">
+                                        <rect key="frame" x="238" y="0.0" width="78" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <state key="normal" title="Carb Ratio">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="carbRatio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILI-sB-IvO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="0ee-Kk-QhW">
+                                <rect key="frame" x="-753" y="241" width="1920" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZJy-4C-dgb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9M-Nw-gD5">
+                                <rect key="frame" x="114.5" y="727" width="185" height="30"/>
+                                <state key="normal" title="Take a picture of your meal">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Carb Ratio :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA9-OZ-y4f">
+                                <rect key="frame" x="140.5" y="607" width="133" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoz-my-bhu">
+                                <rect key="frame" x="114" y="772" width="186" height="30"/>
+                                <state key="normal" title="Calculate the sugar in meal">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xA9-OZ-y4f" firstAttribute="top" secondItem="kvc-a3-iod" secondAttribute="bottom" constant="80" id="1xV-WV-bGQ"/>
+                            <constraint firstItem="D9M-Nw-gD5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4UT-jp-Fdv"/>
+                            <constraint firstItem="D9M-Nw-gD5" firstAttribute="top" secondItem="kvc-a3-iod" secondAttribute="bottom" constant="200" id="GKV-si-Cez"/>
+                            <constraint firstItem="AfE-B0-OiF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vlx-1h-R8e"/>
+                            <constraint firstItem="kvc-a3-iod" firstAttribute="top" secondItem="AfE-B0-OiF" secondAttribute="bottom" constant="30" id="W6u-8K-apa"/>
+                            <constraint firstItem="AfE-B0-OiF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aHD-B5-MPr"/>
+                            <constraint firstItem="Yoz-my-bhu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edI-gL-kz4"/>
+                            <constraint firstItem="xA9-OZ-y4f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q2P-EU-L2h"/>
+                            <constraint firstItem="Yoz-my-bhu" firstAttribute="top" secondItem="D9M-Nw-gD5" secondAttribute="bottom" constant="15" id="ukr-qD-Afk"/>
+                            <constraint firstItem="0ee-Kk-QhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xqw-kC-hYU"/>
+                            <constraint firstItem="AfE-B0-OiF" firstAttribute="top" secondItem="0ee-Kk-QhW" secondAttribute="bottom" constant="40" id="yCr-Dg-3Wm"/>
+                            <constraint firstItem="kvc-a3-iod" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHg-bR-52j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="output" destination="xA9-OZ-y4f" id="ymJ-Pn-ikw"/>
+                        <outlet property="textInput" destination="AfE-B0-OiF" id="gaR-pZ-2K4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_transparent" width="1920" height="1080"/>
+    </resources>
 </document>
